@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+      /* slide-in-left{
+        from(-100px)
+        to(200px)
+      } */
+        @keyframes slide-in-right {
+            from{transform: translateX(1500px);}
+            to{transform: translateY(300px);}
+            
+        }
+div {
+    
+    animation-name:slide-in-right;
+    animation-duration: 3s;
+    animation-timing-function:linear ;
+    animation-delay: 2s;
+    animation-iteration-count:4;
+    animation-fill-mode: backwards;
+    transform: translateX(-50px); 
+    /* animation:slide-in-left 3s liner 2s 1 forwards; */
+}
+div{
+    width:200px;
+    height: 200px;
+    background-color: gold;
+}
+.test h3{
+    position: relative;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color:red;
+    
+    padding:4px;
+}
+div:hover{
+    background-color: greenyellow;
+}
+
+@keyframes rotate{
+from{
+    
+    transform: rotate(150deg);
+   
+    
+}
+to{
+  
+    transform:rotate(-50deg);
+    transform: translateX(500px);
+}
+}
+.test{
+   background-color:rebeccapurple;
+    animation:rotate 3s ease-in 2s 4 normal forwards;
+    transform: translateX(400px);
+   
+
+}
+@keyframes bounce {
+    0%{transform: translateY(0px);}
+    20%{transfrom:translateY(0px);}
+    40%{transform: translateY(-40px);}
+    60%{transfrom:translateY(0px);}
+    80%{transform: translateY(-15px);}
+    100%{transfrom:translateY(0px);}
+    
+}
+.bounce{
+    background-color: aqua;
+    animation:bounce 3s ease-in 1s 4 normal forwards;
+    transform: translateX(300px);
+}
+
+ </style>
+
+</head>
+<body>
+    <h1>Animation</h1>
+    <div>
+        <p>Moving</p>
+    </div>
+    
+    <div class="test">
+        <h3>Rotating</h3>
+</div>
+<div class="bounce">
+    </div>
+</body>
+</html>

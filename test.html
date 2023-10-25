@@ -1,0 +1,61 @@
+<!-- * Apply diffirent types of effect on text
+* Text effect modification of typography in a way that makes the content more attractive
+* Applying the special format suach as outline,reflection, shadow or glow  
+Methods:
+Text Overflow
+Word Wrap
+Word Break
+Writing mode
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+           /* Clip means cut the content ouside the border */
+            text-overflow:clip;
+            width:200px;
+            border:2px solid peru;
+            overflow: hidden;
+            white-space: nowrap;
+         
+        
+        }
+        h2{
+           /* ellipsis means it shows like the Dot*/
+            text-overflow:ellipsis;
+            width:100px;
+            border:2px solid peru;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        h2:hover{
+            background-color: aqua;
+            overflow: visible;
+        }
+        h3{
+            /* Word should be in correct format */
+            word-break: keep-all;
+            width:100px;
+            border:2px solid yellowgreen;
+        }
+        h4{
+            /* Word should be in correct format */
+            word-break: break-all;
+            width:100px;
+            border:2px solid yellowgreen;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Full Stack Developement</h1>
+    <h2>Web Development</h2>
+    <h3>Keep all Content Breaking content I have learn the CSS</h3>
+    <h4>word Breaking content I have learn the CSS</h4>
+  
+</body>
+</html>
